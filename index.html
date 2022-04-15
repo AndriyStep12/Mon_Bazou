@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
+    <title>Mon Bazou | Official DEMO Version</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" href="img/Site-favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 100%;
+            height: 100vh;
+            background-image: url(img/head.jpg);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            height: 13vh;
+            background-color: #000;
+            /*    border-radius: 10px;*/
+            /*    backdrop-filter: blur(10px);*/
+            position: fixed;
+            top: 0;
+            left: 0;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            font-size: 50px;
+            color: brown;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            color: #fff;
+            color: rgb(0, 219, 255);
+            color: linear-gradient(168deg, rgba(0, 219, 255, 1) 0%, rgba(255, 107, 244, 1) 100%);
+            padding-left: 20px;
+            z-index: 1;
+        }
+
+        body {
+            /*    background: rgb(0, 219, 255);*/
+            /*    background: linear-gradient(168deg, rgba(0, 219, 255, 1) 0%, rgba(255, 107, 244, 1) 100%);*/
+            height: 200vh;
+            background-color: #000;
+        }
+
+        h2 {
+            background: rgb(0, 219, 255);
+            background: linear-gradient(168deg, rgba(0, 219, 255, 1) 0%, rgba(255, 107, 244, 1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            width: 50%;
+            font-size: 80px;
+        }
+
+        .butt {
+            background: none;
+            border: 5px solid;
+            border-image-source: linear-gradient(-45deg, #fc1ba6, #4094f6);
+            border-image-slice: 1;
+            width: 200px;
+            height: 80px;
+            font-family: 'Poppins', sans-serif;
+            /*    background: rgb(0, 219, 255);*/
+            /*    background: linear-gradient(168deg, rgba(0, 219, 255, 1) 0%, rgba(255, 107, 244, 1) 100%);*/
+            /*    -webkit-background-clip: text;*/
+            /*    -webkit-text-fill-color: transparent;*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        header a {
+            color: rgb(0, 219, 255);
+            font-size: 30px;
+            margin: 10px;
+        }
+
+        nav {
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        @media screen and (max-width: 1110px) {
+            header {
+                flex-direction: column;
+                height: 10vh;
+            }
+
+            nav {
+                margin-top: -100px;
+                width: 100%;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+            h2 {
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .butt {
+                width: 25vh;
+                height: 11vh;
+                font-size: 60px;
+                border: 10px solid;
+                border-image-source: linear-gradient(-45deg, #fc1ba6, #4094f6);
+                border-image-slice: 1;
+            }
+        }
+
+        .box2 {
+            background-color: #000;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            font-size: 25px;
+        }
+
+        .left,
+        .right {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image img {
+            width: 700px;
+        }
+
+        h3 {
+            font-size: 35px;
+            background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .textH3 {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 1286px) {
+            .box2 {
+                flex-direction: column;
+            }
+
+            .left,
+            .right {
+                width: 100%;
+            }
+
+            .left {
+                margin-top: 0px;
+                margin-bottom: 20px;
+                align-items: flex-end;
+            }
+
+            .right {
+                padding: 0 100px;
+                align-items: flex-start;
+                font-size: 35px;
+            }
+
+            h3 {
+                font-size: 50px;
+            }
+
+            .image img {
+                width: 800px;
+            }
+        }
+
+        .box3 {
+            position: relative;
+            z-index: 0;
+        }
+
+        a:hover {
+            color: rgb(0, 219, 255);
+            font-size: 30px;
+            margin: 10px;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Mon Bazou</h2>
+        <br class="phone">
+        <nav>
+            <span><a href="https://store.steampowered.com/app/1520370/Mon_Bazou/">Steam</a></span>
+            <span><a href="https://discord.com/invite/hP4t3UMnyD">Discord</a></span>
+            <span><a href="https://www.paypal.com/donate?token=NwQSmedF7YUfnooRwt5zMG4nUBDbz7prXINKQlWDpTaGLUS9PwQlgbF8QbTOEobHKgPboqFiy46gXJxz">Donate</a></span>
+            <span><a href="https://www.youtube.com/channel/UCXMmlf3VNiyH_Tp3dejScDA/videos">Youtube</a></span>
+        </nav>
+    </header>
+
+    <div class="box">
+        <a href="https://store.steampowered.com/app/1520370/Mon_Bazou/" class="button">
+            <div class="butt">
+                Mon Bazou<br>
+                on Steam
+            </div>
+
+        </a>
+    </div>
+
+    <div class="box2">
+        <div class="left">
+            <div class="image">
+                <img src="img/head5.jpeg" alt="">
+            </div>
+        </div>
+        <div class="right">
+            <div class="info">
+                <h3><span class="textH3">About Game</span></h3>
+                <p>Build your shitty vehicle into a race car, install the parts yourself. Make money by cutting wood, racing at night or delivering pizza. Maybe you want to manage a sugar shack or build yourself a big garage?</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="box3">
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/Slider_Image_2.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Slider_Image_3.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Slider_Image_4.webp" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
